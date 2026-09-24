@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Segurança Digital para Idosos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU DE ACESSIBILIDADE -->
+    <nav class="barra-acessibilidade" aria-label="Controles de Acessibilidade">
+
+        <button
+            id="btnAumentaTexto"
+            class="botao-controle"
+            title="Aumentar texto">
+            A+ Aumentar
+        </button>
+
+        <button
+            id="btnDiminuiTexto"
+            class="botao-controle"
+            title="Diminuir texto">
+            A- Diminuir
+        </button>
+
+        <button
+            id="btnVoz"
+            class="botao-controle botao-leitura"
+            title="Ouvir página">
+            🔊 Ouvir Página
+        </button>
+
+        <button
+            id="btnPararVoz"
+            class="botao-controle"
+            title="Parar leitura">
+            ⏹️ Parar
+        </button>
+
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <section class="banner">
+            <h1>Segurança Digital para Idosos</h1>
+
+            <p>
+                Aprenda dicas simples para navegar na internet
+                com mais segurança.
+            </p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Dicas de Segurança</h2>
+
+            <ol>
+                <li>Não compartilhe suas senhas com outras pessoas.</li>
+                <li>Desconfie de mensagens e links desconhecidos.</li>
+                <li>Evite informar dados pessoais em sites suspeitos.</li>
+                <li>Mantenha seus dispositivos atualizados.</li>
+                <li>Use senhas fortes e diferentes para cada serviço.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+    <div
+        class="modal-fundo"
+        id="modalAjuda"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tituloModal">
+
+        <div class="modal-conteudo">
+
+            <h2 id="tituloModal">Ajuda</h2>
+
+            <p>
+                Use os botões acima para aumentar ou diminuir o tamanho
+                do texto e ouvir o conteúdo da página.
+            </p>
+
+            <button
+                id="btnFecharModal"
+                class="botao-ajuda">
+                Fechar
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+
+/* ================================
+   MENU DE ACESSIBILIDADE
+================================ */
+
+.barra-acessibilidade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: #333;
+    color: white;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    z-index: 1000;
+
+    flex-wrap: wrap;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* BOTÕES */
+
+.botao-controle {
+    background: white;
+    color: #333;
+
+    border: 2px solid #28a745;
+
+    padding: 10px 15px;
+
+    font-weight: bold;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    transition: 0.2s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.botao-controle:hover {
+    background: #28a745;
+    color: white;
+}
+
+
+/* EFEITO AO CLICAR */
+
+.botao-controle:focus {
+    outline: 3px solid #ffd700;
+    outline-offset: 2px;
+}
+
+
+/* BOTÃO DE LEITURA */
+
+.botao-leitura {
+    background: #28a745;
+    color: white;
+
+    border: none;
+}
+
+.botao-leitura:hover {
+    background: #218838;
+}
+
+
+/* ================================
+   BANNER
+================================ */
+
+.banner {
+    text-align: center;
+
+    padding: 100px 20px 40px;
+
+    background: #e8f5e9;
+}
+
+.banner h1 {
+    margin: 0 0 15px;
+
+    font-size: 2rem;
+
+    color: #1b5e20;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+
+/* ================================
+   CONTEÚDO
+================================ */
+
+.conteudo {
+    max-width: 800px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo h2 {
+    color: #1b5e20;
+}
+
+.conteudo ol {
+    padding: 40px;
+}
+
+
+/* ================================
+   MODAL
+================================ */
+
+.modal-fundo {
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* CONTEÚDO DO MODAL */
+
+.modal-conteudo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    max-width: 90%;
+
+    margin: 0;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* BOTÃO FECHAR */
+
+.botao-ajuda {
+    padding: 10px 20px;
+
+    background: #dc3545;
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+}
+
+.botao-ajuda:hover {
+    background: #b02a37;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 600px) {
+
+    .barra-acessibilidade {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .botao-controle {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .banner {
+        padding-top: 150px;
+    }
+
+    .banner h1 {
+        font-size: 1.6rem;
+    }
+
+    .conteudo {
+        margin: 20px 10px;
+    }
+
+    .conteudo ol {
+        padding: 25px;
+    }
+
+    .modal-conteudo {
+        padding: 20px;
+    }
+}
